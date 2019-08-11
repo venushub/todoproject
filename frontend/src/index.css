@@ -1,0 +1,339 @@
+
+:root {
+  --extra-dark: rgb(40,55,71);
+  --dark : rgb(52,73,71);
+  --light : rgb(174,182,191);
+  --extra-light : rgb(235,237,239);
+  --universal-white : rgb(253,254,254);
+}
+
+
+* {
+  box-sizing: border-box;
+  font-family: verdana;
+}
+
+/* ---------------------home page start---------------------------------*/
+
+.home-main-container {
+  width :100%;
+  height : 100vh;
+  display : flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  background-color: var(--universal-white);
+}
+
+.home-header {
+  width : 100%;
+  background-color: var(--extra-dark);
+  display : flex;
+  align-items: center;
+  justify-content: space-between;
+  padding : 1em 1em 1em 1em;
+}
+
+.home-header-title{
+  font-family: verdana;
+  font-size: 3em;
+  font-weight: bolder;
+  color: var(--extra-light);
+  font-style: italic;
+}
+
+
+.home-info {
+  display : flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  width : 100%;
+  background-color: var(--universal-white)
+}
+
+.home-info-content-top {
+  width: 100%;
+  display : flex;
+  align-items:  center;
+  justify-content: center;
+  padding: 1em;
+}
+
+.home-info-li {
+    list-style-type: none;
+    font-size: 1.8em;
+    font-weight: bolder;
+    color: var(--dark);
+    padding : 1em;
+}
+
+.home-footer {
+  background-color: var(--light);
+  width : 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: verdana;
+  font-size: 3em;
+  font-weight: 600;
+  font-stretch: expanded;
+  color : var(--extra-light);
+  margin-top : auto;
+  padding: 1em;
+  text-align: center;
+}
+
+.nav-link{
+  text-decoration: none;
+  font-size: 1.3em;
+  font-weight: bolder;
+  color: var(--light);
+  font-family: verdana;
+  padding-left : 1.5em
+}
+
+.nav-link:hover {
+    color: var(--extra-light)
+}
+
+
+.my-ul{
+  padding :0;
+  margin : 0;
+}
+
+
+@media screen and (max-width: 768px){
+
+
+  .home-header {
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding : 1em 1.5em 0 1.5em;
+  }
+
+  .nav-link{
+    padding-left : 0em
+  }
+
+  .home-nav {
+    padding : 1em;
+    width : 100%;
+    display : flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+}
+
+/* ---------------------home page End---------------------------------*/
+
+
+
+
+/* ---------------------login page Start---------------------------------*/
+
+.login-container {
+  height : 100vh;
+  width :100%;
+  display : flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  background-color : var(--universal-white)
+}
+
+.login-form-div {
+  min-width: 40%;
+  height: 100%;
+  background-color: var(--extra-dark);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+  width : 100%;
+  padding : 0em 4em 1em 4em;
+}
+
+.login-form-label {
+  font-size: 1.5em;
+  font-weight: bold;
+  color : var(--extra-light);
+  padding-top : 1em;
+}
+
+.login-input {
+  background-color : var(--extra-dark);
+  border-width: 0 0 2px 0;
+  border-color: var(--light);
+  padding-top : 1em;
+  font-size: 1.5em;
+  color:  var(--extra-light);
+  width : 100%;
+}
+
+.login-button {
+  align-self: flex-end;
+  background-color: var(--extra-light);
+  border : none;
+  font-weight: bold;
+  font-size: 1.2em;
+  padding : 0.5em 1em 0.5em 1em;
+  color : var(--extra-dark);
+  border-radius: 0.2em;
+  margin-top : 2em;
+}
+
+.login-button:hover{
+  background-color: var(--light);
+  cursor : pointer
+}
+
+.login-input:focus{
+  outline: none;
+  border-color: var(--extra-light);
+}
+
+.register-here-text-div{
+  margin-top : auto;
+  padding : 1em 1.5em 2em 1.5em;
+  text-align :center;
+}
+
+
+.my-link {
+  font-weight: bold;
+  font-size: 1.5em;
+  color: var(--light)
+}
+
+.my-link:hover {
+  color: var(--extra-light);
+  cursor : pointer
+}
+
+.error-show {
+  height : 10%;
+  width : 80%;
+  font-weight: bold;
+  font-size: 1.5em;
+  color : var(--extra-light);
+  animation-name: errorAnimation;
+  animation-duration: 2s;
+  opacity : 0;
+  margin-top : 2em;
+}
+
+@keyframes errorAnimation {
+  0% {
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+
+.error-hide {
+  height : 10%;
+  margin-top : 2em;
+  opacity : 0;
+  font-size: 1.5em;
+}
+
+.login-header-title {
+  font-size: 3em;
+  font-weight: bolder;
+  color: var(--extra-dark);
+  font-style: italic;
+  padding-top : 0.5em;
+  padding-left: 0.5em;
+
+}
+
+.login-info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+  height: 100%;
+}
+
+
+.login-title {
+  font-family: verdana;
+  font-size: 7em;
+  font-weight: bolder;
+  padding-bottom: 0.1em;
+  padding-left: 0.1em;
+  color: var(--extra-light)
+}
+
+
+.registration-success-container {
+  display : flex;
+  height : 100vh;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 2em;
+  font-weight: bolder;
+  color : var(--extra-light);
+  text-align :center;
+  padding : 0 1em 0 1em;
+}
+
+.register-link{
+  color : var(--light);
+  text-align: center;
+}
+
+.register-link:hover{
+  color : var(--extra-light);
+}
+
+
+
+@media screen and (max-width: 768px){
+
+  .login-container {
+    height : auto;
+    width : 100%;
+    display : flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .login-form-div {
+    min-height: 100vh;
+    width : 100%;
+    background-color: var(--extra-dark);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    margin-top: auto;
+  }
+
+  .login-title {
+    font-size: 3em;
+  }
+
+}
+
+
+
+
+/* ---------------------login page End---------------------------------*/

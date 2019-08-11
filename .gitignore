@@ -1,0 +1,9 @@
+backend/todoenv/
+
+frontend/node_modules/
+
+*.pyc
+
+*.swp
+
+frontend/package-lock.json
