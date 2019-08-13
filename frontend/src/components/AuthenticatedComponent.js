@@ -23,7 +23,7 @@ componentDidMount(){
       token : token
     }
   }).then(res => {
-    // console.log("auth isssssss", res)
+    console.log("auth isssssss", res)
     this.setState({
       user: res.data
     })

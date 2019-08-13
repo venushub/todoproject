@@ -712,3 +712,32 @@ button:hover{
 .bt0 {
   border-top-width: 0;
 }
+
+.tasks-div-com {
+  background-color: var(--dark);
+  width : 100%;
+}
+
+.logout-container {
+  width : 100%;
+  display: flex;
+  align-items:center;
+  justify-content: flex-start;
+  font-family: verdana;
+  font-weight: bold;
+  margin-left : 1em;
+}
+
+.flex-this-row {
+  display : flex;
+  width : 100%;
+  padding : 1em;
+}
+
+.boxn{
+  display : flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin-left : 1em;
+  margin-top : 1em;
+}

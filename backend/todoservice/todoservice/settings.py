@@ -93,25 +93,25 @@ WSGI_APPLICATION = 'todoservice.wsgi.application'
 # https://docs.djangoproject.com/en/2.2/ref/settings/#databases
 
 # SQLite Databse settings-----------------------
-# DATABASES = {
-#     'default': {
-#         'ENGINE': 'django.db.backends.sqlite3',
-#         'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
-#     }
-# }
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+    }
+}
 
 
 # Postgres Database settings-------------------
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'todo_db', #put your database name here
-        'USER' : 'postgres',
-        'PASSWORD' : 'nsdl',
-        'HOST' : '127.0.0.1',
-        'PORT' : '5432'
-    }
-}
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.postgresql',
+#         'NAME': 'todo_db', #put your database name here
+#         'USER' : 'postgres',
+#         'PASSWORD' : '*******',
+#         'HOST' : '127.0.0.1',
+#         'PORT' : '5432'
+#     }
+# }
 
 
 # Password validation

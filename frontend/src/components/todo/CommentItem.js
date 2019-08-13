@@ -116,7 +116,7 @@ class CommentItem extends Component {
         <label className={(this.state.fileName !== "")? "btn1 br0" : "none"}>{this.state.fileName}</label>
         <label className="btn1" htmlFor={("newfile" + this.props.comment.id)}>Add File</label>
         <input className="none" type="file" id={("newfile" + this.props.comment.id)} ref="myfile" onChange={this.changedFile} />
-        <button className="btn2" onClick={this.handleAddFile}>Add</button>
+        <button className="btn2" onClick={this.handleAddFile}>Add New File</button>
         </div>
       </div>
     )

@@ -3,6 +3,7 @@ import { Link , NavLink} from 'react-router-dom'
 import {getMe} from './queries/queries'
 import { graphql, compose } from 'react-apollo';
 
+
 class Header extends Component{
 
   constructor(props){

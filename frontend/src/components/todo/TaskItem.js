@@ -285,7 +285,7 @@ class TaskItem extends Component {
 
 
     return(
-      <div className="tasks-div">
+      <div className={(this.state.taskDone === "yes")? "tasks-div-com" : "tasks-div"} >
       <button onClick={this.handleTaskDone} className="done-btn">{(this.state.taskDone === "yes")? "Not Done" : "Done"}</button>
       <div className="task-heading">
         <input type="text" className="task-head-enabled"  disabled={(this.state.updateTask)? "" : "disabled"} name="taskName" onChange={this.handleChange} value={this.state.taskName} />
@@ -310,7 +310,7 @@ class TaskItem extends Component {
           <label className={(this.state.fileName !== "")? "btn1 br0" : "none"}>{this.state.fileName}</label>
           <label className="btn1" htmlFor={"newfile1" + this.props.task.id}>Add File</label>
           <input className="none" type="file" id={"newfile1" + this.props.task.id} ref="myfilehere" onChange={this.changedFile} />
-          <button className="btn2" onClick={this.handleAddComment}>Add</button>
+          <button className="btn2" onClick={this.handleAddComment}>Add New Comment</button>
         </div>
       </div>
     )
