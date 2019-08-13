@@ -8,6 +8,7 @@
     "apollo-link-http": "^1.5.14",
     "axios": "^0.18.1",
     "csvtojson": "^2.0.8",
+    "file-saver": "^2.0.2",
     "graphql": "^14.3.0",
     "lodash": "^4.17.11",
     "moment": "^2.24.0",

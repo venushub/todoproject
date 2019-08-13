@@ -13,6 +13,10 @@
   font-family: verdana;
 }
 
+button:hover{
+  cursor : pointer
+}
+
 /* ---------------------home page start---------------------------------*/
 
 .home-main-container {
@@ -333,7 +337,378 @@
 
 }
 
-
-
-
 /* ---------------------login page End---------------------------------*/
+
+
+/* ---------------------Header page Start---------------------------------*/
+
+
+.header-title{
+  margin-left : 1em;
+  font-family: verdana;
+  color: rgb(242,242,242);
+  font-style: italic;
+  margin-right : 1em;
+}
+
+.header-username {
+  font-family: verdana;
+  color: var(--light);
+  font-style: italic;
+  margin-right : 1em;
+}
+
+.Header-div {
+  display : flex;
+  align-items: center;
+  justify-content: space-between;
+  width : 100%;
+  background-color: var(--extra-dark);
+  margin : 0;
+  padding : 0;
+}
+
+.Header-nav-item {
+  font-family: verdana;
+  text-decoration: none;
+  color: var(--light);
+  margin : 1em;
+  font-weight: bold;
+  font-size : 1.2em;
+}
+
+.Header-nav-item-active {
+  color : var(--extra-light)
+}
+
+.bundle{
+  display : flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--extra-light);
+  font-weight: bold;
+  font-family: cursive;
+}
+
+
+
+@media screen and (max-width: 768px){
+
+  .Header-div{
+    flex-direction: column;
+  }
+
+  .Nav-div{
+    padding : 0 0 2em 0;
+  }
+
+}
+
+
+
+
+
+/* ---------------------Header page End---------------------------------*/
+
+
+.todo-container {
+  display : flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  width : 100%;
+  padding : 1em;
+}
+
+.con1{
+  display : flex;
+  width : 100%;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.con2 {
+  width : 100%;
+}
+
+.none {
+  display : none
+}
+
+.btn1{
+  background-color: var(--universal-white);
+  padding : 0.3em 0.5em 0.3em 0.5em;
+  font-weight: bold;
+  color: var(--extra-dark);
+  font-size: 1em;
+  border : 0.2em solid var(--extra-dark) ;
+}
+
+.btn2{
+  background-color: var(--extra-dark);
+  padding : 0.3em 0.5em 0.3em 0.5em;
+  font-weight: bold;
+  color: var(--extra-light);
+  font-size: 1em;
+  border : 0.2em solid var(--extra-dark) ;
+}
+
+.dark-bold{
+  font-weight: bold;
+  color : var(--extra-dark)
+}
+
+.create-todo-form {
+  width : 100%;
+  display : flex;
+  padding : 0.5em 0 0.5em 0;
+  flex-wrap: wrap;
+}
+
+.add-todo-input{
+  flex-grow : 1;
+  border : 0.2em solid var(--extra-dark);
+  margin-right: 1em;
+}
+
+.todos-con {
+  width : 100%;
+  display: flex;
+  flex-direction: column;
+  border : 0.2em solid var(--extra-dark);
+  margin-top : 0.5em;
+}
+
+.delete-todo-btn{
+  align-self: flex-end;
+  background-color: var(--extra-dark);
+  padding : 0.3em 0.5em 0.3em 0.5em;
+  font-weight: bold;
+  color: var(--extra-light);
+  font-size: 1em;
+  border : 0.2em solid var(--extra-dark) ;
+  margin : 0em 0em 0 0;
+}
+
+.todo-item{
+  width : 100%;
+}
+
+.todo-heading{
+  width : 100%;
+  display : flex;
+  padding : 0.2em 0.2em 0.2em 0.2em;
+}
+
+.todo-head-enabled{
+  flex-grow: 1;
+  border : 0.2em solid var(--extra-dark) ;
+  border-right-width: 0;
+}
+
+.todo-head-enabled:disabled{
+  background-color: var(--extra-light)
+}
+
+.tasks-div {
+  width : 100%;
+}
+
+.disabledme {
+  background-color: var(--extra-light);
+
+}
+
+.task-wrap {
+  display : flex;
+  flex-direction: column;
+  align-items: center;
+  border : 0.2em solid var(--extra-dark) ;
+  margin: 0.2em 0.2em 0.2em 0.2em;
+  position : relative
+}
+
+
+.task-heading {
+  width : 100%;
+  display : flex;
+  padding : 0.2em 0.2em 0em 0.2em;
+}
+
+
+
+.task-head-enabled{
+  flex-grow: 1;
+  border : 0.2em solid var(--extra-dark) ;
+  border-right-width: 0;
+}
+
+.task-head-enabled:disabled{
+  background-color: var(--extra-light)
+}
+
+.goal-div {
+  display : flex;
+  width : 100%;
+  padding : 0em 0.2em 0em 0.2em;
+  flex-wrap: wrap;
+
+}
+
+.done-btn {
+  background-color: var(--extra-dark);
+  padding : 0.3em 0.5em 0.3em 0.5em;
+  font-weight: bold;
+  color: var(--extra-light);
+  font-size: 1em;
+  border : 0.2em solid var(--extra-dark) ;
+  position : absolute;
+  top : 0
+}
+
+.goal-title {
+  border : 0.2em solid var(--extra-dark) ;
+  display : flex;
+  align-items: center;
+  justify-content: center;
+  flex : 1;
+  font-weight: bold;
+  border-right-width: 0;
+  border-left-width: 0;
+}
+
+.btn1:disabled{
+  background-color: var(--extra-light)
+}
+
+.goal-title > input {
+  flex : 1;
+  align-self: stretch;
+}
+
+.delete-task-button{
+  align-self: flex-end;
+  background-color: var(--extra-dark);
+  padding : 0.3em 0.5em 0.3em 0.5em;
+  font-weight: bold;
+  color: var(--extra-light);
+  font-size: 1em;
+  border : 0.2em solid var(--extra-dark) ;
+  margin : 0em 0em 0 0;
+}
+
+
+.todos-div {
+  border : 2px solid var(--dark);
+  padding : 1em;
+}
+
+
+.new-todo-div{
+  display : flex;
+  flex-direction: column;
+  width : 100%;
+  align-items : center;
+  padding : 0.2em;
+}
+
+
+.new-todo-input {
+  border : 0.2em solid var(--extra-dark) ;
+  align-self: stretch;
+  border-bottom-width: 0;
+  flex : 1;
+}
+
+.new-task-goal-div{
+  display : flex;
+  width : 100%;
+}
+
+.add-task-button {
+  background-color: var(--extra-dark);
+  padding : 0.3em 0.5em 0.3em 0.5em;
+  font-weight: bold;
+  color: var(--extra-light);
+  font-size: 1em;
+  border : 0.2em solid var(--extra-dark) ;
+  align-self: stretch;
+}
+
+.my-box {
+  display : flex;
+  width : 100%;
+}
+
+.box2{
+  display : flex;
+  width : 100%;
+  padding : 0.2em;
+}
+
+.comment-item-head{
+  display: flex;
+  align-items: center;
+  margin-top : 0.2em;
+  flex-wrap: wrap;
+}
+.comment-1{
+  width :100%;
+}
+
+.comment-item-title {
+  margin : 0em 1em 0em 0.2em;
+  color : var(--dark)
+}
+
+.comment-file{
+  display : flex;
+  align-items: center;
+  justify-content: flex-end;
+  margin : 0.2em;
+}
+
+.file-here{
+  background-color: var(--extra-dark);
+  padding : 0.3em 0.5em 0.3em 0.5em;
+  font-weight: bold;
+  color: var(--extra-light);
+  font-size: 1em;
+  border : 0.2em solid var(--extra-dark) ;
+  margin-right : 0.2em;
+  margin-left: 0.2em;
+}
+
+.delete-comment-button {
+  background-color: var(--universal-white);
+  padding : 0.3em 0.5em 0.3em 0.5em;
+  font-weight: bold;
+  color: var(--extra-dark);
+  font-size: 1em;
+  border : 0.2em solid var(--extra-dark) ;
+  align-self: flex-end;
+  border-top-width: 0;
+  border-right-width: 0
+}
+
+.comment-input{
+  border : 0.2em solid var(--extra-dark) ;
+  border-right-width: 0;
+  flex : 1;
+}
+
+.comment-div{
+  border : 0.2em solid var(--extra-dark) ;
+  margin : 0.2em;
+  display : flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.br0{
+  border-right-width: 0
+}
+
+.bt0 {
+  border-top-width: 0;
+}

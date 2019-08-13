@@ -38,6 +38,4 @@ class App extends Component {
 }
 
 
-export default compose(
- graphql(getMe, {name : "getMe"}),
-  )(App)
+export default App

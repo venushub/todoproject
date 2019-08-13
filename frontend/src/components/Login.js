@@ -17,7 +17,6 @@ class Login extends Component {
     }
   }
 
-
   handleChange = (e) => {
     this.setState({
       [e.target.name]: e.target.value
@@ -40,8 +39,6 @@ class Login extends Component {
     })
   }
 
-
-
   handleSubmit = (e) => {
     e.preventDefault();
     if(this.state.loginUsername !== '' && this.state.loginPassword !== ''){
@@ -60,7 +57,6 @@ class Login extends Component {
       this.handleErrorShow('Fill in the blanks')
     }
   }
-
 
   render(){
     return(
@@ -85,7 +81,6 @@ class Login extends Component {
   }
 
 }
-
 
 export default compose(
     graphql(getTokenMutation, { name: "getTokenMutation" })
